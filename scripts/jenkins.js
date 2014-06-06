@@ -21,7 +21,7 @@ function getJobs() {
 }
 
 module.exports = function (robot) {
-  robot.hear(/(shoot|kill) the (dream)?bot/i, function (msg) {
+  robot.hear(new RegExp('(shoot|kill)(.*) (robot|bot|droid|' + robot.name + ')', 'i'), function (msg) {
     return msg.send('oh no please don\'t kill me, im just the messenger');
   });
 
