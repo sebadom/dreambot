@@ -53,7 +53,7 @@ module.exports = function (robot) {
       }
 
       if (lastGood) {
-        result = 'successufull';
+        result = 'successfull';
       }
 
       response = 'Last ' + job + ' build (' + lastCompletedBuild.number + ') was ' + result + '\n' +
